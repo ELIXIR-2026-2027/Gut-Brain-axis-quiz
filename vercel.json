@@ -1,0 +1,6 @@
+{
+  "buildCommand": "echo 'Build complete'",
+  "outputDirectory": "public",
+  "framework": "express",
+  "nodeVersion": "16.x"
+}
