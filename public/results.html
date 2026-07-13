@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Gut-Brain Axis Quiz</title>
+    <link rel="stylesheet" href="css/results.css">
+</head>
+<body>
+    <div class="results-container">
+        <div class="animated-background"></div>
+        
+        <section class="thank-you-section">
+            <h1>🙏 Thank You for Completing the Quiz!</h1>
+            <p>Your insights will help us understand your gut-brain health better.</p>
+        </section>
+
+        <section class="score-section">
+            <div class="score-card">
+                <div class="score-display">
+                    <h2 id="statusBadge"></h2>
+                    <div class="score-circle">
+                        <span id="totalScore">0</span>
+                        <span class="max-score">/130</span>
+                    </div>
+                    <p id="scorePercentage">0%</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <h2>📊 Your Detailed Feedback</h2>
+            <p class="subtitle">Sorted by priority (lowest scores first)</p>
+            <div id="feedbackList"></div>
+        </section>
+
+        <section class="certificate-section">
+            <h2>📜 Your Certificate</h2>
+            <p>Download your personalized certificate to share and celebrate your health journey!</p>
+            <button onclick="downloadCertificate()" class="btn btn-primary">Download Certificate 📥</button>
+        </section>
+
+        <section class="articles-section">
+            <h2>📚 Learn More About Gut-Brain Health</h2>
+            <div id="articlesList"></div>
+        </section>
+
+        <section class="sharing-section">
+            <h2>📱 Share the Quiz</h2>
+            <p>Scan the QR code or share the link with others:</p>
+            <div id="qrCode"></div>
+            <input type="text" id="quizLink" readonly class="quiz-link-input">
+            <button onclick="copyLink()" class="btn btn-secondary">Copy Link</button>
+        </section>
+
+        <div class="footer-buttons">
+            <button onclick="window.location.href='/index.html'" class="btn btn-secondary">Back Home 🏠</button>
+            <button onclick="retakeQuiz()" class="btn btn-primary">Retake Quiz 🔄</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode.js/1.5.0/qrcode.min.js"></script>
+    <script src="js/results.js"></script>
+</body>
+</html>

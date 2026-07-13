@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Gut-Brain Axis</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="animated-background"></div>
+        
+        <div class="quiz-header">
+            <h1>🧠✨ Gut-Brain Axis Quiz</h1>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p class="progress-text"><span id="currentQuestion">1</span> / 13</p>
+        </div>
+
+        <div class="quiz-content">
+            <div id="quizForm"></div>
+            <div class="button-group">
+                <button id="prevBtn" onclick="previousQuestion()" class="btn btn-secondary" style="display:none;">← Previous</button>
+                <button id="nextBtn" onclick="nextQuestion()" class="btn btn-primary">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
