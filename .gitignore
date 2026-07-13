@@ -11,3 +11,9 @@ build/
 .idea/
 certificates/
 uploads/
+.env.local
+.env.*.local
+*.swp
+*.swo
+*~
+.cache/

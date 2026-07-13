@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - QUIZ_LINK_EXPIRATION_DAYS=21
+      - MAX_CONCURRENT_USERS=1000
+    volumes:
+      - ./certificates:/app/certificates
+    restart: unless-stopped
